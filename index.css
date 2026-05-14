@@ -1,0 +1,26 @@
+/* 1. Import font Plus Jakarta Sans dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Panggilan wajib untuk Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Pengaturan global dasar */
+@layer base {
+  html {
+    /* 2. Ubah font-family utama ke Plus Jakarta Sans */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#F5F5F5] text-[#333333]; 
+  }
+}
+
+/* Custom CSS untuk menyembunyikan scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
